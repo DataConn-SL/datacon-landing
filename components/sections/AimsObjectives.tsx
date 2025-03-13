@@ -1,13 +1,13 @@
-"use client"
+"use client";
 
-import { Link } from "@heroui/link"
-import { button as buttonStyles } from "@heroui/theme"
+import { Link } from "@heroui/link";
+import { button as buttonStyles } from "@heroui/theme";
 
 interface BenefitSectionProps {
-  title: string
-  description: string
-  imageUrl: string
-  direction: "left" | "right"
+  title: string;
+  description: string;
+  imageUrl: string;
+  direction: "left" | "right";
 }
 
 const benefits = [
@@ -52,7 +52,6 @@ const benefits = [
   },
 ];
 
-
 export function AimObjective() {
   return (
     <>
@@ -66,7 +65,10 @@ export function AimObjective() {
                 <div className="bg-black-200 rounded-xl border border-gray-800 p-6 relative overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-tr from-gray-500/10 to-transparent"></div>
                   <img
-                    src={benefit.imageUrl || "/placeholder.svg?height=400&width=600"}
+                    src={
+                      benefit.imageUrl ||
+                      "/placeholder.svg?height=400&width=600"
+                    }
                     alt={benefit.title}
                     className="w-full h-[250px] rounded-lg relative z-10 filter grayscale hover:grayscale-0 transition duration-300 object-cover"
                   />
@@ -74,8 +76,12 @@ export function AimObjective() {
               </div>
 
               <div className="w-full lg:w-1/2">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">{benefit.title}</h2>
-                <p className="text-gray-400 text-lg mb-6">{benefit.description}</p>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                  {benefit.title}
+                </h2>
+                <p className="text-gray-400 text-lg mb-6">
+                  {benefit.description}
+                </p>
                 <Link
                   href="#"
                   className={buttonStyles({

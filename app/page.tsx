@@ -5,6 +5,8 @@ import { FeatureSection } from "@/components/sections/FeatureSection";
 import { AimObjective } from "@/components/sections/AimsObjectives";
 import { TestimonialSection } from "@/components/sections/TestimonialSection";
 import Roadmap from "@/components/sections/RoadMap";
+import Partners from "@/components/sections/Partners";
+import { Contributors } from "@/components/contributor-tooltip";
 
 export default function Home() {
   return (
@@ -17,13 +19,20 @@ export default function Home() {
 
         {/* Benefits */}
         <div className="py-20">
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">Aims & Objectives</h1>
+          <h1 className="text-3xl md:text-4xl font-bold mb-4">
+            Aims & Objectives
+          </h1>
           <AimObjective />
         </div>
 
         {/* roadmap */}
         <Roadmap />
-        <TestimonialSection />
+
+        {/* partner */}
+        <Partners />
+
+        {/* contributors */}
+        <Contributors />
       </div>
     </div>
   );

@@ -1,9 +1,9 @@
 export type SiteConfig = typeof siteConfig;
 
-
 export const siteConfig = {
   name: "DataConn",
-  description: "Simplify your startup growth journey with our all-in-one platform.",
+  description:
+    "Simplify your startup growth journey with our all-in-one platform.",
   navItems: [
     {
       label: "Home",
